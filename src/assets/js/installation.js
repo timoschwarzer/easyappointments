@@ -76,7 +76,7 @@ $(function () {
 
             // Check for empty fields.
             var missingRequired = false;
-            $('input').each(function () {
+            $('.form-group input').each(function () {
                 if ($(this).val() == '') {
                     $(this).closest('.form-group').addClass('has-error');
                     missingRequired = true;
