@@ -6,6 +6,7 @@ createAppSettings() {
     sed -i "s/DB_USERNAME   = ''/DB_USERNAME = '$DB_USERNAME'/g" $PROJECT_DIR/config.php
     sed -i "s/DB_PASSWORD   = ''/DB_PASSWORD = '$DB_PASSWORD'/g" $PROJECT_DIR/config.php
     sed -i "s/DB_NAME       = ''/DB_NAME = '$DB_NAME'/g" $PROJECT_DIR/config.php
+    sed -i "s/BASE_URL      = ''/BASE_URL = '$BASE_URL'/g" $PROJECT_DIR/config.php
     if [ "$EMAIL_PROTOCOL" = "smtp" ]; then
         echo "Setting up email..."
         sed -i "s/\$config\['protocol'\] = 'mail'/\$config['protocol'] = 'smtp'/g" $PROJECT_DIR/application/config/email.php
