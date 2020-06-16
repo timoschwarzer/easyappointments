@@ -24,14 +24,14 @@
             height: 100vh;
             display: table-cell;
             vertical-align: middle;
-            background-color: #CAEDF3;
+            background-color: #FFF;
         }
 
         #login-frame {
             width: 630px;
             margin: auto;
             background: #FFF;
-            border: 1px solid #DDDADA;
+            border: 1px solid #e3000b;
             padding: 70px;
         }
 
@@ -96,7 +96,9 @@
 </head>
 <body>
     <div id="login-frame" class="frame-container">
-        <h2><?= lang('backend_section') ?></h2>
+        <h2>
+        <img src="<?= base_url('assets/img/stwon_logo.svg') ?>">
+        </h2>
         <p><?= lang('you_need_to_login') ?></p>
         <hr>
         <div class="alert hidden"></div>
@@ -123,10 +125,10 @@
 
             <a href="<?= site_url('user/forgot_password') ?>" class="forgot-password">
             	<?= lang('forgot_your_password') ?></a>
-            |
+            <!-- 
             <span id="select-language" class="label label-success">
 	        	<?= ucfirst($this->config->item('language')) ?>
-	        </span>
+	        </span> -->
         </form>
     </div>
 

@@ -42,13 +42,13 @@ body .ui-dialog .ui-dialog-titlebar-close {
 }
 
 body .ui-draggable .ui-dialog-titlebar {
-    background: #39c678;
-    color: #FFF;
+    background: #fff;
+    color: #e3000b;
     font-size: 1.5em;
     font-weight: lighter;
     padding: 12px 10px;
     border: none;
-    border-bottom: 4px solid #c0f1d6;
+    border-bottom: 4px solid #e3000b;
     margin-bottom: 10px;
 }
 
@@ -74,7 +74,7 @@ body .ui-dialog #error-technical {
 }
 
 body .ui-widget.ui-widget-content {
-    border: 1px solid #3DD481;
+    border: 1px solid #e3000b;
     padding: 0;
 }
 
@@ -84,7 +84,7 @@ body #ui-datepicker-div {
 
 body .ui-datepicker .ui-widget-header {
     border: none;
-    background: #3DD481;
+    background: #e3000b;
     border-radius: 0;
 }
 
@@ -98,7 +98,7 @@ body .ui-datepicker .ui-datepicker-title {
 }
 
 body .ui-datepicker th {
-    background: #3DD481;
+    background: #e3000b;
     color: #FFF;
 }
 
@@ -110,7 +110,7 @@ body .ui-datepicker td a,
 body .ui-datepicker td span {
     border: none !important;
     background: none !important;
-    color: #1A865F !important;
+    color: #e3000b !important;
     text-align: center !important;
     width: 32px;
     height: 32px;
@@ -120,7 +120,7 @@ body .ui-datepicker td span {
 html body .ui-datepicker td a.ui-state-active {
     color: #FFF !important;
     font-weight: bold !important;
-    background: #3DD481 !important;
+    background: #e3000b !important;
     border-radius: 50px;
     width: 22px;
     height: 22px;
@@ -129,9 +129,10 @@ html body .ui-datepicker td a.ui-state-active {
 }
 
 body .ui-datepicker td a.ui-state-highlight {
-    background: #80E3AD !important;
+    background: #fff !important;
     border-radius: 67px;
-    color: #FFF !important;
+    color: #e3000b !important;
+    text-decoration: underline;
     width: 22px;
     height: 22px;
     line-height: 1.3;
@@ -388,4 +389,51 @@ li.language:hover {
 
 #message_box pre {
     max-height: 250px;
+}
+.btn {
+    background-color: #e3000b !important;
+  }
+.btn-default {
+    color: #ffffff !important;
+    background-color: #e3000b !important;
+    border-color: transparent;
+}
+
+.btn-default.active {
+    background-color: #c00303 !important;
+}
+
+.btn-default.active::after {
+    content: '(aktiv)';
+}
+
+a {
+    color: #e3000b !important;
+    text-decoration: none;
+}
+.text-primary {
+    color: #e3000b !important;
+}
+select, select.form-control {
+    box-shadow: inset 0 -1px 0 #e3000b !important;
+}
+select.form-control:focus {
+    -webkit-box-shadow: inset 0 -2px 0 #e3000b !important;
+    box-shadow: inset 0 -2px 0 #e3000b !important;
+}
+input, input.form-control {
+    box-shadow: inset 0 -1px 0 #e3000b !important;
+}
+input.form-control:focus {
+    -webkit-box-shadow: inset 0 -2px 0 #e3000b !important;
+    box-shadow: inset 0 -2px 0 #e3000b !important;
+}
+body {
+    color: #000000 !important;
+  }
+.form-control {
+    color: #000000 !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000000 !important;
 }

@@ -34,8 +34,8 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <div id="header-logo" class="navbar-brand">
-                <img src="<?= base_url('assets/img/logo.png') ?>">
-                <span><?= $company_name ?></span>
+                <img src="<?= base_url('assets/img/stwon_logo.svg') ?>">
+               
             </div>
             
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu" 

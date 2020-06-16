@@ -19,6 +19,7 @@
 
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/ext/bootstrap/css/bootstrap.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/ext/jquery-ui/jquery-ui.min.css') ?>">
+    <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/general.css') ?>">
 
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
 
@@ -28,14 +29,14 @@
             height: 100vh;
             display: table-cell;
             vertical-align: middle;
-            background-color: #CAEDF3;
+            background-color: #FFF;
         }
 
         #forgot-password-frame {
             width: 630px;
             margin: auto;
             background: #FFF;
-            border: 1px solid #DDDADA;
+            border: 1px solid #e3000b;
             padding: 70px;
         }
 
@@ -104,7 +105,7 @@
 </head>
 <body>
     <div id="forgot-password-frame" class="frame-container">
-        <h2><?= lang('forgot_your_password') ?></h2>
+        <h2><img src="<?= base_url('assets/img/stwon_logo.svg') ?>"></h2>
         <p><?= lang('type_username_and_email_for_new_password') ?></p>
         <hr>
         <div class="alert hidden"></div>
