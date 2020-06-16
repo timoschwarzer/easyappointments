@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/general.css') ?>">
 
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
-    <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
+    <link rel="icon" sizes="268x50" href="<?= asset_url('assets/img/stwon_logo.svg') ?>">
 </head>
 
 <body>
@@ -27,7 +27,8 @@
                 <!-- FRAME TOP BAR -->
 
                 <div id="header">
-                    <span id="company-name"><?= $company_name ?></span>
+                    <span id="company-name">
+                    <img src="<?= base_url('assets/img/stwon_logo.svg') ?>"></span>
 
                     <div id="steps">
                         <div id="step-1" class="book-step active-step" title="<?= lang('step_one_title') ?>">
@@ -334,7 +335,7 @@
                 <!-- FRAME FOOTER -->
 
                 <div id="frame-footer">
-                    Powered By
+                    <!-- Powered By
                     <a href="http://easyappointments.org" target="_blank">Easy!Appointments</a>
                     |
                     <span id="select-language" class="label label-success">
@@ -343,7 +344,7 @@
                     |
                     <a href="<?= site_url('backend'); ?>">
                         <?= $this->session->user_id ? lang('backend_section') : lang('login') ?>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>

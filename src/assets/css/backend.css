@@ -20,8 +20,8 @@ root {
 /* BACKEND GENERAL ELEMENTS
    -------------------------------------------------------------------- */
 #header {
-    background-color: #39c678;
-    border-bottom: 4px solid #c0f1d6;
+    background-color: #FFF;
+    border-bottom: 4px solid #e3000b;
     box-shadow: none;
     border-radius: 0;
     margin-bottom: 15px;
@@ -33,7 +33,7 @@ root {
 
 #header #header-logo img {
     float: left;
-    width: 50px;
+    width: 268px;
     height: 50px;
     margin-right: 10px;
 }
@@ -53,7 +53,7 @@ root {
 #header #header-menu .menu-item {
     cursor: pointer;
     min-width: 130px;
-    color: #FFF;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
@@ -66,12 +66,12 @@ root {
 }
 
 #header #header-menu .menu-item:hover:not(.active) {
-    background-color: #2A8F57;
+    background-color: #b9b8b8;
 }
 
 #header #header-menu .active {
     color: #C5FFD6;
-    background: #29A067;
+    background: #dbd9d9;
 }
 
 #footer {
@@ -155,8 +155,8 @@ body .modal .modal-title {
 
 body .modal-header {
     padding: 12px 15px;
-    background: #39c678;
-    border-bottom: 4px solid #c0f1d6;
+    background: #fff;
+    border-bottom: 4px solid #e3000b;
 }
 
 body .modal-header h3 {
@@ -167,7 +167,7 @@ body .modal-header h3 {
 
 body .modal-header .close {
     margin-top: 2px;
-    color: #12482a;
+    color: #e3000b;
 }
 
 body .modal-content {
@@ -629,7 +629,7 @@ body .form-horizontal .controls {
 
 #users-page #providers .switch-view .current {
     color: #FFF;
-    background: #39c678;
+    background: #e3000b;
 }
 
 #users-page #providers .details-view,

@@ -515,7 +515,7 @@ window.FrontendBook = window.FrontendBook || {};
             + '<strong class="text-primary">'
             + $('#select-provider option:selected').text() + '<br>'
             + selectedDate + ' ' + $('.selected-hour').text()
-            + servicePrice + ' ' + serviceCurrency
+            
             + '</strong>' +
             '</p>';
 
@@ -677,7 +677,7 @@ window.FrontendBook = window.FrontendBook || {};
                     html += '[' + EALang.duration + ' ' + service.duration + ' ' + EALang.minutes + ']';
                 }
 
-                if (service.price != '' && service.price != null) {
+                if (service.price != '0.00' && service.price != null) {
                     html += '[' + EALang.price + ' ' + service.price + ' ' + service.currency + ']';
                 }
 

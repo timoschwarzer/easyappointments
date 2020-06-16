@@ -12,6 +12,16 @@
 
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
     <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
+    <style>
+    .btn {
+    background-color: #e3000b !important;
+    }
+.btn-default {
+    color: #ffffff !important;
+    background-color: #ffffff;
+    border-color: transparent;
+    }
+    </style>
 </head>
 <body>
     <div id="main" class="container">
