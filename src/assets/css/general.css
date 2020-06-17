@@ -16,14 +16,14 @@
 }
 
 body .custom-qtip {
-    border: none;
-    border-radius: 0;
+    border: 1px solid #e3000b;
+    border-radius: 8px;
     padding: 10px;
-    box-shadow: 1px 1px 3px #767676;
+    /*box-shadow: 1px 1px 3px #000000;*/
     background: #EFFDF6;
     font-size: 12px;
     line-height: 20px;
-    color: #258D53;
+    color: #e3000b
 }
 
 body .ui-widget {
@@ -414,6 +414,10 @@ a {
 .text-primary {
     color: #e3000b !important;
 }
+.has-error {
+    -webkit-box-shadow: inset 0 -2px 0 #e3000b!important;
+    box-shadow: inset 0 -2px 0 #e3000b!important;
+}
 select, select.form-control {
     box-shadow: inset 0 -1px 0 #e3000b !important;
 }
@@ -425,6 +429,13 @@ input, input.form-control {
     box-shadow: inset 0 -1px 0 #e3000b !important;
 }
 input.form-control:focus {
+    -webkit-box-shadow: inset 0 -2px 0 #e3000b !important;
+    box-shadow: inset 0 -2px 0 #e3000b !important;
+}
+textarea.form-control {
+    box-shadow: inset 0 -1px 0 #e3000b !important;
+}
+textarea.form-control:focus {
     -webkit-box-shadow: inset 0 -2px 0 #e3000b !important;
     box-shadow: inset 0 -2px 0 #e3000b !important;
 }
