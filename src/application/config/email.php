@@ -7,6 +7,7 @@
 $config['useragent'] = 'Easy!Appointments';
 $config['protocol'] = 'mail'; // or 'smtp'
 $config['mailtype'] = 'html'; // or 'text'
+$config['from_email'] = 'from@email.com';
 // $config['smtp_host'] = '';
 // $config['smtp_user'] = ''; 
 // $config['smtp_pass'] = '';

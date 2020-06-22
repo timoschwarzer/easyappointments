@@ -164,10 +164,8 @@ class Email {
         $html = file_get_contents(__DIR__ . '/../../application/views/emails/appointment_details.php');
         $html = $this->_replaceTemplateVariables($replaceArray, $html);
 
-        $mailer = $this->_createMailer();
+        $mailer = $this->_createMailer($company['company_name'], $company['company_email']);
 
-        $mailer->From = $company['company_email'];
-        $mailer->FromName = $company['company_name'];
         $mailer->AddAddress($recipientEmail->get());
         $mailer->Subject = $title->get();
         $mailer->Body = $html;
@@ -268,11 +266,9 @@ class Email {
         $html = file_get_contents(__DIR__ . '/../../application/views/emails/delete_appointment.php');
         $html = $this->_replaceTemplateVariables($replaceArray, $html);
 
-        $mailer = $this->_createMailer();
+        $mailer = $this->_createMailer($company['company_name'], $company['company_email']);
 
         // Send email to recipient.
-        $mailer->From = $company['company_email'];
-        $mailer->FromName = $company['company_name'];
         $mailer->AddAddress($recipientEmail->get()); // "Name" argument crushes the phpmailer class.
         $mailer->Subject = $this->framework->lang->line('appointment_cancelled_title');
         $mailer->Body = $html;
@@ -305,10 +301,8 @@ class Email {
         $html = file_get_contents(__DIR__ . '/../../application/views/emails/new_password.php');
         $html = $this->_replaceTemplateVariables($replaceArray, $html);
 
-        $mailer = $this->_createMailer();
+        $mailer = $this->_createMailer($company['company_name'], $company['company_email']);
 
-        $mailer->From = $company['company_email'];
-        $mailer->FromName = $company['company_name'];
         $mailer->AddAddress($recipientEmail->get()); // "Name" argument crushes the phpmailer class.
         $mailer->Subject = $this->framework->lang->line('new_account_password');
         $mailer->Body = $html;
@@ -325,13 +319,20 @@ class Email {
      *
      * @return \PHPMailer
      */
-    protected function _createMailer()
+    protected function _createMailer($fromName, $replyToMail = null)
     {
         $mailer = new \PHPMailer;
 
         if ($this->config['protocol'] === 'smtp')
         {
             $mailer->isSMTP();
+            
+            if (!empty($replyToMail)) {
+                $mailer->AddReplyTo($replyToMail, $fromName);
+            }
+            
+            $mailer->From = $this->config['from_email'];
+            $mailer->FromName = $fromName;
             $mailer->Host = $this->config['smtp_host'];
             $mailer->SMTPAuth = TRUE;
             $mailer->Username = $this->config['smtp_user'];
