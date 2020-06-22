@@ -11,7 +11,7 @@ createAppSettings() {
     if [ "$EMAIL_PROTOCOL" = "smtp" ]; then
         echo "Setting up email..."
         sed -i "s/\$config\['protocol'\] = 'mail'/\$config['protocol'] = 'smtp'/g" $PROJECT_DIR/application/config/email.php
-        sed -i "s#// \$config\['from_email'\] = 'from\@email\.com'#\$config['from_email'] = '$MAIL_FROM'#g" $PROJECT_DIR/application/config/email.php
+        sed -i "s/\$config\['from_email'\] = 'from@email.com'/\$config['from_email'] = '$MAIL_FROM'/g" $PROJECT_DIR/application/config/email.php
         sed -i "s#// \$config\['smtp_host'\] = ''#\$config['smtp_host'] = '$SMTP_HOST'#g" $PROJECT_DIR/application/config/email.php
         sed -i "s#// \$config\['smtp_user'\] = ''#\$config['smtp_user'] = '$SMTP_USER'#g" $PROJECT_DIR/application/config/email.php
         sed -i "s#// \$config\['smtp_pass'\] = ''#\$config['smtp_pass'] = '$SMTP_PASS'#g" $PROJECT_DIR/application/config/email.php
