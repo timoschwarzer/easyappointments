@@ -337,6 +337,7 @@ class Email {
             $mailer->SMTPAuth = TRUE;
             $mailer->Username = $this->config['smtp_user'];
             $mailer->Password = $this->config['smtp_pass'];
+            $mailer->SMTPAutoTLS = false;
             $mailer->SMTPSecure = $this->config['smtp_crypto'];
             $mailer->Port = $this->config['smtp_port'];
         }
