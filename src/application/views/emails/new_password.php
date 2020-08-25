@@ -15,7 +15,7 @@
             <h2>$email_title</h2>
             <p>$email_message</p>
         </div>
-
+        <!-- 
         <div id="footer" style="padding: 10px; text-align: center; margin-top: 10px;
                 border-top: 1px solid #EEE; background: #FAFAFA;">
             Powered by
@@ -23,6 +23,7 @@
             |
             <a href="$company_link" style="text-decoration: none;">$company_name</a>
         </div>
+        -->
     </div>
 </body>
 </html>
