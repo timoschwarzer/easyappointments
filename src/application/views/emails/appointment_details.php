@@ -33,6 +33,10 @@
                     <td class="label" style="padding: 3px;font-weight: bold;">End</td>
                     <td style="padding: 3px;">$appointment_end_date</td>
                 </tr>
+                <tr>
+                    <td class="label" style="padding: 3px;font-weight: bold;">Bemerkungen</td>
+                    <td style="padding: 3px;">$appointment_notes</td>
+                </tr>
             </table>
 
             <h2>Customer Details</h2>
@@ -58,7 +62,7 @@
             <h2>Appointment Link</h2>
             <a href="$appointment_link" style="width: 600px;">$appointment_link</a>
         </div>
-
+        <!-- 
         <div id="footer" style="padding: 10px; text-align: center; margin-top: 10px;
                 border-top: 1px solid #EEE; background: #FAFAFA;">
             Powered by
@@ -66,6 +70,7 @@
             |
             <a href="$company_link" style="text-decoration: none;">$company_name</a>
         </div>
+        -->
     </div>
 </body>
 </html>
