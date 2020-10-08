@@ -61,6 +61,7 @@
                         </form>
                     </div>
                 </div>
+                <!--
                 <div class="booking-header-bar row">
                     <div class="col-xs-12 col-sm-10">
                         <p><?= lang('delete_personal_information_hint') ?></p>
@@ -68,7 +69,8 @@
                     <div class="col-xs-12 col-sm-2">
                         <button id="delete-personal-information" class="btn btn-danger btn-sm"><?= lang('delete') ?></button>
                     </div>
-                </div>
+                </div> 
+                -->
                 <?php endif; ?>
 
                 <?php
