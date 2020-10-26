@@ -61,6 +61,7 @@
                         </form>
                     </div>
                 </div>
+                <!--
                 <div class="booking-header-bar row">
                     <div class="col-xs-12 col-sm-10">
                         <p><?= lang('delete_personal_information_hint') ?></p>
@@ -68,7 +69,8 @@
                     <div class="col-xs-12 col-sm-2">
                         <button id="delete-personal-information" class="btn btn-danger btn-sm"><?= lang('delete') ?></button>
                     </div>
-                </div>
+                </div> 
+                -->
                 <?php endif; ?>
 
                 <?php
@@ -87,6 +89,7 @@
                 <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
                         <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
+                        <strong>Aufgrund der steigenden Covid-19 Infektionszahlen können wir momentan leider keine persönlichen Termine anbieten. Wir danken für Ihr Verständnis.</strong><br><br>
 
                         <div class="frame-content">
                             <div class="form-group">
