@@ -89,7 +89,6 @@
                 <div id="wizard-frame-1" class="wizard-frame">
                     <div class="frame-container">
                         <h3 class="frame-title"><?= lang('step_one_title') ?></h3>
-                        <strong>Aufgrund der steigenden Covid-19 Infektionszahlen können wir momentan leider keine persönlichen Termine anbieten. Wir danken für Ihr Verständnis.</strong><br><br>
 
                         <div class="frame-content">
                             <div class="form-group">
