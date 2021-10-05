@@ -34,8 +34,12 @@
                     <td style="padding: 3px;">$appointment_end_date</td>
                 </tr>
                 <tr>
-                    <td class="label" style="padding: 3px;font-weight: bold;">Bemerkungen</td>
+                    <td class="label" style="padding: 3px;font-weight: bold;">Ihre Bemerkungen</td>
                     <td style="padding: 3px;">$appointment_notes</td>
+                </tr>
+                <tr>
+                    <td class="label" style="padding: 3px;font-weight: bold;">Hinweise:</td>
+                    <td style="padding: 3px;">$appointment_provider_notes</td>
                 </tr>
             </table>
 

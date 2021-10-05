@@ -137,6 +137,7 @@ class Email {
             '$email_message' => $message->get(),
             '$appointment_service' => $service['name'],
             '$appointment_provider' => $provider['first_name'] . ' ' . $provider['last_name'],
+            '$appointment_provider_notes' => $provider['notes'],
             '$appointment_start_date' => date($date_format . ' ' . $timeFormat, strtotime($appointment['start_datetime'])),
             '$appointment_end_date' => date($date_format . ' ' . $timeFormat, strtotime($appointment['end_datetime'])),
             '$appointment_link' => $appointmentLink->get(),
