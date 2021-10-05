@@ -38,8 +38,8 @@
                     <td style="padding: 3px;">$appointment_notes</td>
                 </tr>
                 <tr>
-                    <td class="label" style="padding: 3px;font-weight: bold;">Hinweise:</td>
-                    <td style="padding: 3px;">$appointment_provider_notes</td>
+                    <td class="label" style="padding: 3px;font-weight: bold;">Hinweise</td>
+                    <td style="padding: 3px;">$appointment_prov_notes</td>
                 </tr>
             </table>
 
